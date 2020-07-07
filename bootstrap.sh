@@ -1,7 +1,8 @@
 #!/bin/bash
 
-apt-get update
-apt-get install -y apache2
+yum update -y
+yum install -y httpd
 cat <<EOF > /var/www/html/index.html
 <!doctype html><html><body><h1>hello world!</h1></body></html>
 EOF
+apachectl start

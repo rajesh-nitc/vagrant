@@ -2,12 +2,14 @@
 
 ## Prerequisites
 VirtualBox
+Vagrant
 
 ### Getting Started
 ```
-vagrant init hashicorp/bionic64
-vagrant box add hashicorp/bionic64
+vagrant plugin install vagrant-registration
+vagrant init
 vagrant up
 vagrant ssh
+vagrant suspend
 vagrant destroy
 ```
